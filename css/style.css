@@ -63,14 +63,31 @@ nav .logo{
 /*============================================= Css For Main ============================================= */
 
 .first-sec{
-
-}
-.first-sec .sec-img{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
 }
 .first-sec .sec-img img{
-
+    width: 150px;
+    border-radius: 15px;
 }
 .first-sec .sec-content{
-    
+    color: white;
+    margin: 0 0 0 72px;
+}
+p.describe-me{
+    font-size: 30px;
+}
+p.describe-me span{
+    transition: all 1s;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+.social-media a{
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
 }
