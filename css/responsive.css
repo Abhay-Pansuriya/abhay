@@ -1,0 +1,30 @@
+/* Laptop view */
+@media only screen and (max-width: 1232px) {
+    .nav-list li a {
+        padding: 12px 27px;
+    }
+    nav .logo {
+        width: 25%;
+    }
+}
+
+/* Tab View */
+@media only screen and (max-width: 1028px) {
+    .logo .logo-text {
+        font-size: 21px;
+    }
+    .nav-list li a {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+    .nav-list {
+        width: 70%;
+    }
+    nav .logo {
+        width: 29%;
+    }
+}
+/* Mobile View */
+@media only screen and (max-width: 750px) {
+
+}
