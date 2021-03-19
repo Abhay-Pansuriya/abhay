@@ -1,3 +1,7 @@
+:root{
+    --main_color:#39e9ce;
+    --white : white;
+}
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
     margin: 0;
@@ -5,14 +9,21 @@
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .background{
-    background:rgba(3, 3, 3, 0.411) url('./../images/bg.png');
-    background-size: cover;
+    background:rgba(3, 3, 3, 0.411) url('./../images/bg3.jpg');
+    background-size: contain;
     background-blend-mode: darken;
 
 }
-
+.color-heading{
+    color: var(--main_color);
+    font-weight: bold;
+    color: var(--main_color);
+}
 /* ======================  Code For Header ==========================*/
 header{
     position: sticky;
@@ -20,7 +31,6 @@ header{
 }
 header nav{
     display: flex;
-    border: 2px solid;
     width: 100%;
 }
 ul.nav-bar{
@@ -35,7 +45,7 @@ nav .logo{
 
 .logo .logo-text{
     font-size: 25px;
-    color: white;
+    color: var(--white);
     padding: 6px 30px;
     cursor: pointer;
 }
@@ -47,21 +57,19 @@ nav .logo{
     justify-content: center;
 }
 .nav-list li a{
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 12px 55px;
     font-size: 17px;
 }
-.nav-bar .nav-active{
-    color: rgb(212, 212, 212);
-}
+
 .nav-list li a:hover{
-    color: rgb(212, 212, 212);
+    color: var(--main_color);
     transition: all 0.3s;
 }
 
 /*============================================= Css For Main ============================================= */
-
+/* Section one design */
 .first-sec{
     display: flex;
     justify-content: center;
@@ -73,21 +81,71 @@ nav .logo{
     border-radius: 15px;
 }
 .first-sec .sec-content{
-    color: white;
+    color: var(--white);
     margin: 0 0 0 72px;
 }
 p.describe-me{
     font-size: 30px;
-}
-p.describe-me span{
-    transition: all 1s;
+    text-align: center;
 }
 .social-media {
     display: flex;
     justify-content: center;
 }
 .social-media a{
-    color: white;
+    color: var(--main_color);
     padding: 15px 10px;
     font-size: 20px;
+}
+.sec-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-btns a{
+    margin-right: 4px;
+    text-decoration: none;
+    padding: 5px 18px;
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    
+    
+}
+.sec-btns a:hover{
+    color: black;
+    background: var(--main_color);
+    transition: all 0.5s;
+    border-color: var(--main_color);
+}
+
+/* section 2 design here */               
+.second-sec{
+
+}
+.title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.title span{
+    
+}
+.section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.section-content .image-container img{
+    width: 250px;
+}
+.info-container{
+}
+.info-container p{
+    /* width: 50%; */
 }
