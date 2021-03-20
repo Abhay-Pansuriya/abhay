@@ -1,5 +1,5 @@
 :root{
-    --main_color:#39e9ce;
+    --main_color:#13ac94;
     --white : white;
 }
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -22,7 +22,13 @@ html{
 .color-heading{
     color: var(--main_color);
     font-weight: bold;
-    color: var(--main_color);
+}
+.sticky{
+    background: var(--main_color);
+    transition: 0.4s ease-in-out;
+}
+.sticky > ul .nav-list a:hover{
+    color: white;
 }
 /* ======================  Code For Header ==========================*/
 header{
@@ -32,6 +38,7 @@ header{
 header nav{
     display: flex;
     width: 100%;
+    padding:  10px 0;
 }
 ul.nav-bar{
     display: flex;   
@@ -69,7 +76,7 @@ nav .logo{
 }
 
 /*============================================= Css For Main ============================================= */
-/* Section one design */
+/*---- Section one design strats here ----*/
 .first-sec{
     display: flex;
     justify-content: center;
@@ -93,7 +100,7 @@ p.describe-me{
     justify-content: center;
 }
 .social-media a{
-    color: var(--main_color);
+    color: white;
     padding: 15px 10px;
     font-size: 20px;
 }
@@ -116,24 +123,24 @@ p.describe-me{
     
 }
 .sec-btns a:hover{
-    color: black;
     background: var(--main_color);
     transition: all 0.5s;
     border-color: var(--main_color);
 }
-
-/* section 2 design here */               
-.second-sec{
-
+.social-media a:hover{
+    color: var(--main_color);
+    transition: all 0.3s ease-in-out;
 }
+
+/*---- section 2 design starts here ----*/               
+
 .title{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    margin: 11px 0;
 }
-.title span{
-    
-}
+
 .section-content{
     display: flex;
     align-items: center;
@@ -143,9 +150,9 @@ p.describe-me{
 }
 .section-content .image-container img{
     width: 250px;
+    border: 7px solid var(--main_color);
+    border-radius: 20px;
 }
 .info-container{
-}
-.info-container p{
-    /* width: 50%; */
+    margin-left: 66px;
 }

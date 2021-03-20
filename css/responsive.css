@@ -10,6 +10,7 @@
 
 /* Tab View */
 @media only screen and (max-width: 1028px) {
+    /* Section one */
     .logo .logo-text {
         font-size: 21px;
     }
@@ -22,6 +23,14 @@
     }
     nav .logo {
         width: 29%;
+    }
+
+    /* Section 2 */
+    .section-content {
+        width: 79%;
+    }
+    .section-content .image-container img {
+        width:172px;
     }
 }
 /* Mobile View */
