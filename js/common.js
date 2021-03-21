@@ -34,6 +34,7 @@ $(document).ready(function(){
                     width++;
                     elem.css("width",width + "%") ;
                     elem.siblings('.progress-text').text(width + "%");
+                    // elem.siblings('.progress-text').css("left",(width-15) + "%");
                 }
             }
         }

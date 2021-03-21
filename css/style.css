@@ -224,6 +224,7 @@ p.describe-me{
     font-size: 15px;
 }
 .myProgress .progress-text{
+    /* position: relative; */
     float: right;
 }
   
