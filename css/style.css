@@ -12,12 +12,11 @@
 html{
     scroll-behavior: smooth;
 }
-
+/*  All common class CSS */
 .background{
     background:rgba(3, 3, 3, 0.411) url('./../images/bg3.jpg');
     background-size: contain;
     background-blend-mode: darken;
-
 }
 .color-heading{
     color: var(--main_color);
@@ -30,10 +29,47 @@ html{
 .sticky > ul .nav-list a:hover{
     color: white;
 }
+.bg-black{
+    background:black;
+    color: white;
+}
+.btn-black{
+    
+    background: none;
+    border: 2px solid var(--main_color);
+    padding: 8px 20px ;
+    color: white;
+    font-size: 17px;
+    border-radius: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+.btn-white{
+    background: var(--main_color);
+    border: 2px solid var(--main_color);
+    padding: 8px 20px ;
+    color: white;
+    font-size: 17px;
+    border-radius: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+.btn-black:hover{
+    background: var(--main_color);
+    transition: all 0.4s;
+}
+.btn-white:hover{
+    background: #1f8a79;
+    border-color: #1f8a79;
+    transition: all 0.4s;
+}
 /* ======================  Code For Header ==========================*/
 header{
     position: sticky;
     top: 0;
+    background-size: auto !important
 }
 header nav{
     display: flex;
@@ -73,6 +109,10 @@ nav .logo{
 .nav-list li a:hover{
     color: var(--main_color);
     transition: all 0.3s;
+    font-weight: bold;
+}
+.describe-me span{
+    background: #00000075;
 }
 
 /*============================================= Css For Main ============================================= */
@@ -109,24 +149,7 @@ p.describe-me{
     justify-content: center;
     align-items: center;
 }
-.sec-btns a{
-    margin-right: 4px;
-    text-decoration: none;
-    padding: 5px 18px;
-    background: none;
-    border: 2px solid var(--white);
-    color: var(--white);
-    font-size: 16px;
-    border-radius: 9px;
-    cursor: pointer;
-    
-    
-}
-.sec-btns a:hover{
-    background: var(--main_color);
-    transition: all 0.5s;
-    border-color: var(--main_color);
-}
+
 .social-media a:hover{
     color: var(--main_color);
     transition: all 0.3s ease-in-out;
@@ -155,4 +178,61 @@ p.describe-me{
 }
 .info-container{
     margin-left: 66px;
+}
+
+
+
+
+/* Section 3 Design starts here */
+.third-sec{
+    margin: 25px 0 0 0;
+    padding: 25px 0;
+}
+.sec3-content {
+    width: 70%;
+    margin: 20px auto;    
+}
+.sec3-content .text-content{
+    text-align: center;
+    width: 50%;
+    margin: 5px auto;
+    font-size: 17px;
+}
+.sec3-content .text-content button{
+    margin-top: 10px;
+    text-align: center;
+}
+.progress-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.front-end {
+    width: 50%;
+}
+.back-end {
+    width: 50%;
+}
+.myProgress {
+    width: 85%;
+    margin: 10px 0;
+}
+.myProgress p{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 15px;
+}
+.myProgress .progress-text{
+    float: right;
+}
+  
+.myBar {
+    width: 10%;
+    height: 7px;
+    background-color: var(--main_color);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
 }
