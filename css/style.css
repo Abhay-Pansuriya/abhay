@@ -110,10 +110,33 @@ nav .logo{
     color: var(--main_color);
     transition: all 0.3s;
     font-weight: bold;
+    /* background: #00000075 */
 }
 .describe-me span{
     background: #00000075;
 }
+.logo-mob{
+    display: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px 13px;
+    
+}
+.hamburger{
+    display: none;
+    width: 31px;
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    border: 2px solid white;
+    border-radius: 28px;
+}
+.hamburger div{
+    background: white;
+    padding: 1px;
+    margin: 5px;
+}
+
 
 /*============================================= Css For Main ============================================= */
 /*---- Section one design strats here ----*/
@@ -129,7 +152,6 @@ nav .logo{
 }
 .first-sec .sec-content{
     color: var(--white);
-    margin: 0 0 0 72px;
 }
 p.describe-me{
     font-size: 30px;
@@ -207,6 +229,9 @@ p.describe-me{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+.progress-content div > .skills-heading{
+    font-size: 25px;
 }
 .front-end {
     width: 50%;

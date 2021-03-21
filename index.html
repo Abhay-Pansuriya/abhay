@@ -13,6 +13,7 @@
     <div class="container">
         <header class="background">
             <nav>
+                <div class="logo-mob"> AP </div>
                 <ul class="nav-bar"> 
                     <div class="logo">
                         <p class="logo-text"> Abhay Pansuriya </p>
@@ -26,6 +27,11 @@
                         <li><a href="#contact">Contact</a></li>
                     </div>                  
                 </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
         </header>
         <main>
@@ -73,7 +79,7 @@
                     </div>
                     <div class="progress-content">
                         <div class="front-end">
-                            <p> Front-end Skills </p>
+                            <p class="skills-heading"> Front-end Skills </p>
                             <div class="myProgress">
                                 <p class="progress-subject"> HTML5 </p>
                                 <p class="progress-text"> 10% </p>
@@ -102,7 +108,7 @@
                             </div>
                         </div>
                         <div class="back-end">
-                            <p> Back-end Skills </p>
+                            <p class="skills-heading"> Back-end Skills </p>
                             <div class="myProgress">
                                 <p class="progress-subject"> PHP </p>
                                 <p class="progress-text"> 10% </p>
@@ -139,6 +145,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
         <script src="js/common.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.hamburger').click(function(){
+                    $(this).siblings('.nav-bar').slideToggle();
+                    $(this).siblings('.logo-mob').toggle();
+                });
+            });
+        </script>
     </div>
 </body>
 </html>
