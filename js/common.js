@@ -21,9 +21,9 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".change-text", {
-        strings: ["Abhay Pansuriya","Developer", "Programmer", "Designer", "Code Lover"],
-        typeSpeed: 90,
-        backSpeed: 60,
+        strings: ["Abhay Pansuriya","Developer", "Programmer", "Designer", "Code Lover","IT Engineer"],
+        typeSpeed: 110,
+        backSpeed: 70,
         loop: true
     });
 
@@ -52,12 +52,30 @@ $(document).ready(function(){
             }
         });
     }
-    function make_progress_default(){
-        $('.progress-content div .myProgress').each(function(){
-            var elem = $(this).children('.myBar');
-            elem.css("width","10%") ;
-            elem.siblings('.progress-text').text("10%");
-        });
-    }
-    
+    // function make_progress_default(){
+    //     $('.progress-content div .myProgress').each(function(){
+    //         var elem = $(this).children('.myBar');
+    //         elem.css("width","10%") ;
+    //         elem.siblings('.progress-text').text("10%");
+    //     });
+    // }
+    $('.hamburger').click(function(){
+        $(this).toggleClass("is-active");
+        $(this).siblings('.nav-bar').slideToggle();
+        $(this).siblings('.logo-mob').toggle();
+    });
+    $(document).mouseup(function(e) {
+        var container = $(".nav-bar");
+        var container2 = $(".hamburger");
+        // if the target of the click isn't the container nor a descendant of the container
+        var width = $(window).width();
+        if(width < 750){
+            if ((!container.is(e.target) && container.has(e.target).length === 0) || (!container2.is(e.target) && container2.has(e.target).length === 0))
+            {
+                $('.hamburger').removeClass("is-active");
+                $('.nav-bar').slideUp();
+                $('.logo-mob').show();
+            }
+        }
+    });
 })

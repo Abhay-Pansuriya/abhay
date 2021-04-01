@@ -306,3 +306,25 @@ p.describe-me{
     color: white;
     border-radius: 5px;
 }
+.slider-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* For Portfolio  */
+.card {
+    transition: 0.3s;
+    width: 17%;
+    margin: 0 56px;
+    border: 2px solid BLACK;
+    padding: 25px;
+    border-radius: 27px;
+    cursor: pointer;
+}
+.card .container{
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
