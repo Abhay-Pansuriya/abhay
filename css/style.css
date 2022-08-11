@@ -1,43 +1,52 @@
-:root{
-    --main_color:#13ac94;
-    --white : white;
+:root {
+    --main_color: #13ac94;
+    --white: white;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-*{
+
+* {
     margin: 0;
-    padding:0 ;
+    padding: 0;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /*  All common class CSS */
-.background{
-    background:rgba(3, 3, 3, 0.411) url('./../images/bg3.jpg');
+.background {
+    background: rgba(3, 3, 3, 0.411) url('./../images/bg3.jpg');
     background-size: contain;
     background-blend-mode: darken;
 }
-.color-heading{
+
+.color-heading {
     color: var(--main_color);
     font-weight: bold;
 }
-.sticky{
+
+.sticky {
     background: var(--main_color);
     transition: 0.4s ease-in-out;
 }
-.sticky > ul .nav-list a:hover{
+
+.sticky>ul .nav-list a:hover {
     color: white;
 }
-.bg-black{
-    background:black;
+
+.bg-black {
+    background: black;
     color: white;
 }
-.btn-black{
-    
+
+.btn-black {
+
     background: none;
     border: 2px solid var(--main_color);
-    padding: 8px 20px ;
+    padding: 8px 20px;
     color: white;
     font-size: 17px;
     border-radius: 13px;
@@ -45,10 +54,11 @@ html{
     text-decoration: none;
     margin: 5px;
 }
-.btn-white{
+
+.btn-white {
     background: var(--main_color);
     border: 2px solid var(--main_color);
-    padding: 8px 20px ;
+    padding: 8px 20px;
     color: white;
     font-size: 17px;
     border-radius: 13px;
@@ -56,81 +66,93 @@ html{
     text-decoration: none;
     margin: 5px;
 }
-.btn-black:hover{
+
+.btn-black:hover {
     background: var(--main_color);
     transition: all 0.4s;
 }
-.btn-white:hover{
+
+.btn-white:hover {
     background: #1f8a79;
     border-color: #1f8a79;
     transition: all 0.4s;
 }
+
 /* ======================  Code For Header ==========================*/
-header{
+header {
     position: sticky;
     top: 0;
     background-size: auto !important
 }
-header nav{
+
+header nav {
     display: flex;
     width: 100%;
-    padding:  10px 0;
+    padding: 10px 0;
 }
-ul.nav-bar{
-    display: flex;   
+
+ul.nav-bar {
+    display: flex;
     width: 100%;
 }
-nav .logo{
+
+nav .logo {
     width: 20%;
     position: sticky;
     top: 0;
 }
 
-.logo .logo-text{
+.logo .logo-text {
     font-size: 25px;
     color: var(--white);
     padding: 6px 30px;
     cursor: pointer;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     list-style: none;
     align-items: center;
     width: 80%;
     justify-content: center;
 }
-.nav-list li a{
+
+.nav-list li a {
     color: var(--white);
     text-decoration: none;
     padding: 12px 55px;
     font-size: 17px;
 }
 
-.nav-list li a:hover{
+.nav-list li a:hover {
     color: var(--main_color);
     transition: all 0.3s;
     font-weight: bold;
     /* background: #00000075 */
 }
-.describe-me span{
+
+.describe-me span {
     background: #00000075;
 }
-.logo-mob{
+
+.logo-mob {
     display: none;
     color: white;
     font-size: 20px;
     padding: 12px 13px;
-    
+
 }
-.hamburger{
+
+.hamburger {
     display: none;
     width: 31px;
     position: absolute;
     top: 1px;
     right: 14px;
-    
+
 }
-.hamburger .line{
+
+.hamburger .line {
     width: 30px;
     height: 3px;
     background-color: #ecf0f1;
@@ -140,10 +162,12 @@ nav .logo{
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.hamburger:hover{
+
+.hamburger:hover {
     cursor: pointer;
 }
-#hamburger-6.is-active{
+
+#hamburger-6.is-active {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -154,95 +178,103 @@ nav .logo{
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-  
-  .hamburger.is-active .line:nth-child(2){
+}
+
+.hamburger.is-active .line:nth-child(2) {
     width: 0px;
-  }
-  
-  .hamburger.is-active .line:nth-child(1),
-  .hamburger.is-active .line:nth-child(3){
+}
+
+.hamburger.is-active .line:nth-child(1),
+.hamburger.is-active .line:nth-child(3) {
     -webkit-transition-delay: 0.3s;
     -o-transition-delay: 0.3s;
     transition-delay: 0.3s;
-  }
-  
-  .hamburger.is-active .line:nth-child(1){
+}
+
+.hamburger.is-active .line:nth-child(1) {
     -webkit-transform: translateY(13px);
     -ms-transform: translateY(13px);
     -o-transform: translateY(13px);
     transform: translateY(13px);
-  }
-  
-  .hamburger.is-active .line:nth-child(3){
+}
+
+.hamburger.is-active .line:nth-child(3) {
     -webkit-transform: translateY(-13px) rotate(90deg);
     -ms-transform: translateY(-13px) rotate(90deg);
     -o-transform: translateY(-13px) rotate(90deg);
     transform: translateY(-13px) rotate(90deg);
-  }
+}
 
 
 /*============================================= Css For Main ============================================= */
 /*---- Section one design strats here ----*/
-.first-sec{
+.first-sec {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 450px;
 }
-.first-sec .sec-img img{
+
+.first-sec .sec-img img {
     width: 150px;
     border-radius: 15px;
 }
-.first-sec .sec-content{
+
+.first-sec .sec-content {
     color: var(--white);
 }
-p.describe-me{
+
+p.describe-me {
     font-size: 30px;
     text-align: center;
 }
+
 .social-media {
     display: flex;
     justify-content: center;
 }
-.social-media a{
+
+.social-media a {
     color: white;
     padding: 15px 10px;
     font-size: 20px;
 }
-.sec-btns{
+
+.sec-btns {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     color: var(--main_color);
     transition: all 0.3s ease-in-out;
 }
 
-/*---- section 2 design starts here ----*/               
+/*---- section 2 design starts here ----*/
 
-.title{
+.title {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     margin: 11px 0;
 }
 
-.section-content{
+.section-content {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     margin: auto;
 }
-.section-content .image-container img{
+
+.section-content .image-container img {
     width: 250px;
     border: 7px solid var(--main_color);
     border-radius: 20px;
 }
-.info-container{
+
+.info-container {
     margin-left: 66px;
 }
 
@@ -250,53 +282,63 @@ p.describe-me{
 
 
 /* Section 3 Design starts here */
-.third-sec{
+.third-sec {
     margin: 25px 0 0 0;
     padding: 25px 0;
 }
+
 .sec3-content {
     width: 70%;
-    margin: 20px auto;    
+    margin: 20px auto;
 }
-.sec3-content .text-content{
+
+.sec3-content .text-content {
     text-align: center;
     width: 50%;
     margin: 5px auto;
     font-size: 17px;
 }
-.sec3-content .text-content button{
+
+.sec3-content .text-content button {
     margin-top: 10px;
     text-align: center;
 }
+
 .progress-content {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
-.progress-content div > .skills-heading{
+
+.progress-content div>.skills-heading {
     font-size: 25px;
 }
+
 .front-end {
     width: 50%;
 }
+
 .back-end {
     width: 50%;
 }
+
 .myProgress {
     width: 85%;
     margin: 10px 0;
 }
-.myProgress p{
+
+.myProgress p {
     display: inline-block;
     padding: 5px 0;
     font-size: 15px;
 }
-.myProgress .progress-text{
+
+.myProgress .progress-text {
     /* position: relative; */
     float: right;
 }
-  
+
 .myBar {
     width: 10%;
     height: 7px;
@@ -306,10 +348,13 @@ p.describe-me{
     color: white;
     border-radius: 5px;
 }
+
 .slider-sec {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 45%;
+    margin: auto;
 }
 
 /* For Portfolio  */
@@ -322,9 +367,11 @@ p.describe-me{
     border-radius: 27px;
     cursor: pointer;
 }
-.card .container{
+
+.card .container {
     text-align: center;
 }
+
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
