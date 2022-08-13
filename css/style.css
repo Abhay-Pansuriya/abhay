@@ -82,7 +82,8 @@ html {
 header {
     position: sticky;
     top: 0;
-    background-size: auto !important
+    background-size: auto !important;
+    z-index: 9;
 }
 
 header nav {
@@ -257,7 +258,7 @@ p.describe-me {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin: 11px 0;
+    margin: 45px 0;
 }
 
 .section-content {
@@ -353,7 +354,11 @@ p.describe-me {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 45%;
+    /* max-width: 45%; */
+    margin: auto;
+}
+
+.slick-slide img {
     margin: auto;
 }
 
@@ -365,13 +370,49 @@ p.describe-me {
     border: 2px solid BLACK;
     padding: 25px;
     border-radius: 27px;
-    cursor: pointer;
+    max-width: 350px;
 }
 
 .card .container {
     text-align: center;
 }
 
+.card img {
+    max-width: 300px;
+}
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    cursor: pointer;
+}
+
+.slider-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-btn .slider-svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 19px auto;
+}
+
+.contact-me div {
+    margin: 15px 5px;
+}
+
+.contact-me div a {
+    color: var(--main_color);
 }

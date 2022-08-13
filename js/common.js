@@ -9,11 +9,20 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 1,
         centerMode: true,
-        variableWidth: true
+        variableWidth: true,
+        prevArrow: "<button type='button' class='slick-prev pull-left slider-btn'><i class='fa fa-angle-left slider-svg' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right slider-btn'><i class='fa fa-angle-right slider-svg' aria-hidden='true'></i></button>"
+
     });
 
 
 
+    $('.card-title').click(function () {
+        const link = $(this).attr('link');
+        if (link) {
+            window.open(link)
+        }
+    })
 
 
     var hieghtThreshold = $(".progress-content").offset();

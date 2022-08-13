@@ -3,6 +3,7 @@
     .nav-list li a {
         padding: 12px 27px;
     }
+
     nav .logo {
         width: 25%;
     }
@@ -10,17 +11,21 @@
 
 /* Tab View */
 @media only screen and (max-width: 1028px) {
+
     /* Section one */
     .logo .logo-text {
         font-size: 21px;
     }
+
     .nav-list li a {
         padding: 12px 15px;
         font-size: 15px;
     }
+
     .nav-list {
         width: 70%;
     }
+
     nav .logo {
         width: 29%;
     }
@@ -29,74 +34,109 @@
     .section-content {
         width: 79%;
     }
+
     .section-content .image-container img {
-        width:172px;
+        width: 172px;
     }
+
     /* Section 3 */
-    .sec3-content .text-content{
+    .sec3-content .text-content {
         width: 89%;
     }
-    
+
 }
+
 /* Mobile View */
 @media only screen and (max-width: 750px) {
-    ul.nav-bar.nav-active{
+    ul.nav-bar.nav-active {
         display: block !important;
         transition: all 0.6s !important;
     }
-    ul.nav-bar{
+
+    ul.nav-bar {
         display: none;
         margin-top: 35px;
     }
-    .logo-mob.logo-pos{
+
+    .logo-mob.logo-pos {
         position: absolute;
     }
-    .nav-bar .logo{
+
+    .nav-bar .logo {
         display: none;
     }
-    .logo-mob,.hamburger{
+
+    .logo-mob,
+    .hamburger {
         display: block;
     }
-    header nav{
+
+    header nav {
         padding: 0;
         background: black;
     }
-    .nav-list{
+
+    .nav-list {
         flex-direction: column;
         width: 100%;
         padding: 10px 0;
         z-index: 999;
     }
-    .nav-list li{
+
+    .nav-list li {
         margin: 12px 0px;
     }
-    .nav-list li a{
+
+    .nav-list li a {
         font-size: 18px;
     }
 
 
 
-    .sec-btns{
+    .sec-btns {
         flex-direction: column;
     }
-    .btn-black{
+
+    .btn-black {
         width: 200px;
         text-align: center;
     }
-    .section-content{
+
+    .section-content {
         flex-direction: column;
     }
-    .info-container{
+
+    .info-container {
         margin: 0;
         text-align: center;
     }
-    .sec3-content .text-content,.front-end,.back-end,.myProgress{
+
+    .sec3-content .text-content,
+    .front-end,
+    .back-end,
+    .myProgress {
         width: 100%;
         margin: 20px 0;
     }
 
 
-    .progress-content{
+    .progress-content {
+        flex-direction: column;
+    }
+    .contact-me{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .card {
+        max-width: 250px;
+    }
+
+    .card img {
+        max-width: 200px;
+    }
+    .contact-me{
         flex-direction: column;
     }
 }
