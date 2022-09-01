@@ -405,8 +405,8 @@ p.describe-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    margin: 19px auto;
+    /* width: 70%;
+    margin: 19px auto; */
 }
 
 .contact-me div {
